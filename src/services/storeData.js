@@ -4,6 +4,7 @@ async function storeData(id, data) {
   try {
     const db = new Firestore({
       projectId: 'submissionmlgc-divasarasvati',
+      keyFilename: process.env.GOOGLE_APPLICATION_CREDENTIALS,
       databaseId: 'predictions'
     });
  
